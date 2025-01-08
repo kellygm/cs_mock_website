@@ -1,0 +1,94 @@
+/* Stylesheet to handle grid and flexbox layout of elements */
+/* Authors: Gillian Kelly, Reed Kilday */
+
+/* FLEX BOX ITEMS */
+.page-wrapper {
+    padding: 0px;
+    margin: 0vh;
+    background-color: lightgrey;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that float next to each other */
+  .column-eql {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* idk where this is being used... */
+  img {
+    max-width: 50%;
+    height: 50%;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0;
+  }
+  
+  /* Image banner */
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create 3 columns, 2 of which will serve as side bars */
+  
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  .column.side {
+    width: 50%;
+  }
+  
+  .column.middle {
+    width: 70%;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column-side .column-middle {
+      width: 100%;
+    }
+  }
+  
+  /* CARD LAYOUT */
+  .parent {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .child-card {
+    width: 30%;
+    height: 30%;
+    background-color: #ddd;
+    text-align: center;
+    border: 1px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 2px;
+  }

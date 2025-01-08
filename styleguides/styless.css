@@ -1,0 +1,210 @@
+/* Author: Gillian Kelly */
+
+
+/* Import Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900");
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@400");
+
+* {
+  box-sizing: border-box;
+}
+
+body,html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+hr {
+  height: 1px;
+  margin: 50px 0;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  border: 0;
+}
+
+/* Header and paragraph elements */
+header {
+  background: #4070f4;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.column-side h2 {
+  color: #0E2431;
+  margin: 15px;
+  padding: 0;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  align-items:flex-start;
+}
+
+h1 {
+  color: #4070f4;
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+h2 {
+  color: #4070f4;
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+  text-align: left;
+}
+
+h3 {
+  color: #4070f4;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  margin: 20px;
+}
+
+p {
+  color: black;
+  font-family: 'Spectral', serif;
+  padding: 10px;
+  margin: 25px;
+}
+
+#readMore {
+  font-family: 'Poppins', serif;
+  margin-left: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Main navigation bar setup */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 100%;
+  padding: 0px 15px;
+  transition: all 0.4s ease;
+}
+
+nav.sticky {
+  margin: 0;
+  padding: 15px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li {
+  display: flex;
+  list-style: none;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+
+nav ul li a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 5px;
+  transition: all 0.3s ease;
+}
+
+ol li {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 5px 5px;
+}
+
+nav a:hover {
+  background-color: #a8bdf7;
+  border-radius: 5px;
+  color: #0E2431;
+}
+
+/* SIDEBAR: QUICK LINKS */
+.sidebar {
+  width: 12%;
+  background-color: #d4ddf7;
+  padding: 15px;
+  margin: 20px;
+}
+
+.sidebar-content {
+  padding-left: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.sidebar-content li a {
+  font-family: "Poppins", sans-serif;
+  color: #122f40;
+}
+
+.sidebar-content a:hover {
+  font-weight: bold;
+}
+
+/* MEME OF THE WEEK */
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 50%;
+}
+
+.image-container p {
+  margin: 10px 0;
+}
+
+
+/* Banner elements */
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+}
+
+.banner p {
+  font-size: 15pt;
+  color: white;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.banner a, p a {
+  background-color: #4070f4;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 2em;
+  margin: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.banner a:hover {
+  background-color: #a8bdf7;
+  color: #0E2431;
+  transition: all 0.4s ease;
+}

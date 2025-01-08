@@ -1,0 +1,23 @@
+/* Author: Reed Kilday */
+
+#duck {
+  width: 30%;
+  height: 10%;
+  margin: 0 auto;
+  border-radius: 5%;
+  border-style: solid;
+  margin-bottom: 10px;
+}
+
+#duckdiv {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#tip {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}

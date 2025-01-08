@@ -1,0 +1,160 @@
+/* Style and Layout for Login and Signup Forms */
+/* Author: Gillian Kelly */
+
+/* Import Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900");
+
+/* Keep content within borders */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.bg {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80");
+  /* background-image: url("/cs/www/stu/kellygm/cs343/Project/images/hero-bg.jpg");  */
+  min-height: 380px; /* Center and scale the image */
+  background-image: url("https://unsplash.com/photos/mountains-under-starry-night-Kw2kaIa5Im0");
+  background-position: center;
+  position: relative;
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* change background color when field is focused */
+input[type=text]:focus,
+input[type="password"]:focus {
+  background: #ddd;
+  outline: none;
+}
+
+/* blur the background when popup window is visible */
+.blur-bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: 0.1s ease;
+}
+
+.show-popup .blur-bg-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* LOGIN/SIGNUP BUTTONS (trigger popups) */
+.login-button {
+  width: 20%;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 14px 15px;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #4070f4;
+  transition: 0.2s ease;
+  position: relative;
+
+}
+
+.signup-button {
+  width: 20%;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 14px 15px;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #4070f4;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+.fixed-size-container {
+  height: 400px; /* Adjust as needed */
+  width: 100%; /* This will make it responsive */
+  overflow: hidden; /* To handle larger images */
+}
+
+.fixed-size-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* This will ensure the image covers the whole div */
+}
+
+/* animations for signup and login buttons */
+.login-button:hover,
+.signup-button:hover {
+  background: #203570;
+  color: white;
+  box-shadow: 2px 4px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
+}
+
+/* button formatting */
+.form-btn {
+  width: 100%;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 14px 0;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 25px 0;
+  background: #4070f4;
+  transition: 0.2s ease;
+}
+
+.form-btn:hover {
+  background: #203570;
+  color: white;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: grey;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+}
+
+.form-box a {
+  color: #4070f4;
+  text-decoration: none;
+}
+
+.form-box a:hover {
+  text-decoration: underline;
+}
