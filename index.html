@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author"   content="Gillian Kelly">
+  <title>CS 343 Project!</title>
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styleguides/styless.css">
+  <link rel="stylesheet" href="styleguides/layout.css">
+</head>
+
+<body>
+  <header>
+    <!-- navigation -->
+    <nav>
+      <ul style="margin: 15px;">
+        <li><a class="active" href="index.html" style="text-decoration: none;">Home</a></li>
+        <li><a href="page2.html" style="text-decoration: none;">Explore Jobs</a></li>
+        <li><a href="page3.html" style="text-decoration: none;">Login/Join</a></li>
+        <li><a href="page4.html" style="text-decoration: none;">Resources</a></li>
+        <li><a href="page5.html" style="text-decoration: none;">Debugger Duck</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- banner image -->
+  <div class="banner">
+    <h1 style="padding-bottom: 0px;">Welcome to Our Website!</h1>
+    <p><em>A guide to pursuing a career in computer science.</em></p>
+    <a href="#about" style="transition: 0.2s;">About Us</a>
+  </div>
+
+  <div class="column middle">
+    <!-- Meme of the Week: ACCORDION!!! -->
+    <div id="accordion_one">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapse1" style="font-family: 'Poppins', sans-serif; font-weight: bold; color: #4070f4; font-size: 18pt;">
+            Meme of the Week
+          </a>
+        </div>
+        <div id="collapse1" class="collapse show" data-bs-parent="#accordion_one">
+          <div class="card-body">
+            <img src="images/python-meme.jpg" alt="Meme about python not using semicolons">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- News Story of the Week: CARD! -->
+    <div id="accordion_two">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapse2" style="font-family: 'Poppins', sans-serif; font-weight: bold; color: #4070f4; font-size: 18pt;">
+            This Week in Computer Science...
+          </a>
+        </div>
+        <div id="collapse2" class="collapse show" data-bs-parent="#accordion_two">
+          <div class="card-body">
+            <img src="images/Programming-languages.jpg" class="card-img-top" alt="news article cover image">
+            <h5 class="card-title" style="padding-top: 15px; padding-bottom: 0; text-align: center;">Top Programming Languages 2023</h5>
+            <p>Welcome to IEEE Spectrum’s 10th annual rankings of the Top Programming Languages. While the way we put the TPL together has evolved over the past decade, the basics remain the same: to combine multiple metrics of popularity into a set of rankings that reflect the varying needs of different readers...</p>
+            <a href="https://spectrum.ieee.org/the-top-programming-languages-2023" class="btn-primary" style="margin-bottom: 20px; padding: 10px; border-radius: 3em; align-items: center;" id="readMore">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2 id="about" style="font-weight: bold; text-align: center;">About Us!</h2>
+    <p style="text-align: center;"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+      industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+      scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+      into electronic typesetting,remaining essentially unchanged. It was popularised in the 1960s with the release of
+      Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+      PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+      more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+      readable English.
+    </p>
+  </div>
+  <!-- BOOTSTRAP JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

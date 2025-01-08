@@ -1,0 +1,84 @@
+/*Author: Gillian Kelly*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#banner {
+    background-color: white;
+    text-align: center;    
+    padding: 20px;
+}
+
+.h1-zig {
+    color: #4070f4;
+    font-family: "Poppins", sans-serif;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.h2-zig {
+    font-family: "Poppins", sans-serif;
+    color: rgb(69, 69, 69);
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container {
+    padding: 64px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-66 {
+    float: left;
+    width: 66%;
+    padding: 20px;
+}
+
+.column-33 {
+    float: left;
+    width: 33%;
+    padding: 20px;
+}
+
+.link-button {
+    border: none;
+    align-content: center;
+    color: white;
+    margin-left: 30px;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4070f4;
+}
+
+.link-button:hover {
+    background: #2b4ba0;
+    transition: 0.3s;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .column-33, .column-66 {
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        margin: auto;
+    }
+}
